@@ -7,12 +7,7 @@ app = FastAPI()
 IMAGEDIR = "images/"
 
 origins = [
-    # "http://localhost.tiangolo.com",
-    # "https://localhost.tiangolo.com",
-    # "http://localhost",
-    "http://localhost:3000",
-    "https://ms.siddharthadev.co",
-    "https://manuscipt-reader.vercel.app",
+    "*"
 ]
 
 app.add_middleware(
