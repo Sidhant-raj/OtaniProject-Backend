@@ -9,6 +9,7 @@ import SplitSentences as Sp
 
 
 def detect_and_translate(text, target_language='en'):
+    print(text)
     detected_language = detect(text)
     translator = Translator(from_lang=detected_language, to_lang=target_language)
     translated_text = translator.translate(text)
